@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<title>www. craft beer.mx</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="stylepr.css">
+</head>
+<header>
+    <section id="banner">
+    <img src="https://i.imgur.com/o4tylg8.jpg" width="500" height="250">
+</section>
+    <section id="logo">
+        <img src="https://i.imgur.com/YA3prey.jpg" width="250" height="125">
+</section>
+    <section id="buscador">
+        <table width="250" height="125" border="3" cellspacing="1" cellspadding="1">
+<tr>
+    <td colspan="3"><b>🔎:</b></td>
+</tr>
+<tr>
+    <td><input type="text" name="Query" size="1"/></td>
+    <td><input type="buttom" name="Search" vaule="Ir" onclick="doSearch(this.form.Query);"></td>
+</tr>
+        </table>
+    </section>
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">INICIO</ a></li>
+<li><a href="nosotros.html">NOSOTROS</a></li>
+<li><a href="productos.html">PRODUCTOS</a></li>
+<li><a href="precios.html">PRECIOS</a></li>
+
+<li><a href="contactanos.html">CONTACTANOS</a></li>
+
+</ul>
+</nav>
+<section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://i.imgur.com/KBKimzl.jpg"
+                        width ="180px" 
+                        height="150px" alt="">
+                    </div>
+                    <p class="descripcion">Cerveza extra alcohol</p>
+                    <span class="precio">$230x12pz</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://i.imgur.com/lb4z9u1.jpg"
+                        width="180px"
+                        height ="150px"                        alt="">
+                    </div>
+                    <p class="descripcion" id>Cerveza obscura</p>
+                    <span class="precio">$260x12pz</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://i.imgur.com/QjddDCo.jpg"
+                        width ="180px"
+                        height ="150px" alt="">
+                    </div>
+                    <p class="descripcion">Cerveza de maiz 
+                    </p>
+                    <span class="precio">$200x12pz</span>
+                </div>
+                </div>
+                <p>ㅤㅤㅤㅤㅤㅤㅤ</p>
+            <br>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://i.imgur.com/xfHZwKF.jpg"
+                        width ="180px"
+                        height ="150px" alt="">
+                    </div>
+                    <p class="descripcion">Cerveza reposada</p>
+                    <span class="precio">$190x12pz</span>
+                </div>
+            <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://i.imgur.com/zo5ApSD.jpg"
+                       width ="180px"
+                       height ="150px" alt="">
+                    </div>
+                    <p class="descripcion">Cerveza de trigo</p>
+                    <span class="precio">$190x12pz</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://i.imgur.com/gEkKZ51.jpg"
+                        width ="180px"
+                        height ="150px" alt="">
+                    </div>
+                    <p class="descripcion">Cerveza regular</p>
+                    <span class="precio">$180x12pz</span>
+                </div>
+              </div>
+            </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="https://i.imgur.com/KBKimzl.jpg"                                  alt="" id="img">
+                <h2 id="modelo">Cerveza extra alcohol</h2>
+                <p id="descripcion"></p>
+
+                <span class="precio" id="precio">$230x12pz</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">cantidas</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                    </div><a href="carrito.html">
+                    <button>AGREGAR AL CARRITO</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    </main><!-- fin del contenido principal -->
+<footer>
+<ul>
+<li><a href="#">copyrigh@2023 todos los derechos reservados noma craft beer creado por esbeidi trejo </a></li>
+</ul>
+</footer>
+  
+  <script>
+       function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="pro.js" ></script>
+</body>
+</html>
+
+  
+
+                          </body>
+                          </html>
+
+  
+  
+  
+   
+   
+   
+   
+   
+   

@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<title>www. craft beer.mx</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="styleca.css">
+</head>
+<body>
+<header>
+    <section id="banner">
+    <img src="https://i.imgur.com/o4tylg8.jpg" width="500" height="250">
+</section>
+    <section id="logo">
+        <img src="https://i.imgur.com/YA3prey.jpg" width="250" height="125">
+</section>
+    <section id="buscador">
+        <table width="250" height="125" border="3" cellspacing="1" cellspadding="1">
+<tr>
+    <td colspan="3"><b>🔎:</b></td>
+</tr>
+<tr>
+    <td><input type="text" name="Query" size="1"/></td>
+    <td><input type="buttom" name="Search" vaule="Ir" onclick="doSearch(this.form.Query);"></td>
+</tr>
+        </table>
+    </section>
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">INICIO</ a></li>
+<li><a href="nosotros.html">NOSOTROS</a></li>
+<li><a href="productos.html">PRODUCTOS</a></li>
+<li><a href="precios.html">PRECIOS</a></li>
+<li><a href="contactanos.html">CONTACTANOS</a></li>
+
+
+</ul>
+</nav>
+<main>
+                  <div>
+               <img onclick="showCart(this)" class="cart" src="https://i.imgur.com/mxSt09z.png" 
+                width="150px"
+                height="150px" alt="">
+                <p class="count-product"></p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3></h3>
+                <div class="card-items">
+                    <div class="item">
+                    </div>
+                    <br>
+                    <div class="item">
+                        <img src="https://i.imgur.com/xFUwTzn.jpg" alt="">
+                        <div class="item-content">
+                            <h5>lol</h5>
+                            <h5 class="cart-price">$010</h5>
+                            <h6>Piezas: 3</h6>
+                        </div>
+                        <span class="delete-product" data-id="">X</span>
+                    </div> -->
+                </div>
+                <h2>Total: $<strong class="price-total">0</strong></h2>
+            </div>
+        </div>
+        <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="https://i.imgur.com/KBKimzl.jpg"
+                    width ="150px"
+                    height ="150px"                      alt="">
+                    <p><span>$230x12px</span></p>
+                </div>
+                <p class="title"><span style="color:black">cerveza extra alcohol </span> </p>
+                <a href="" data-id="1" class="btn-add-cart">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="https://i.imgur.com/VB0vASu.jpg"
+                    width="150px"
+                    height ="150px" alt="">
+                    <p><span>$260x12pz</span></p>
+                </div>
+                <p class="title"><span style="color:black">Cerveza clasica obscura </span> </p>
+                <a href="" class="btn-add-cart" data-id="2">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="https://i.imgur.com/QjddDCo.jpg"
+                    width ="150px"
+                    height ="150px" alt="">
+                    <p><span>$200x12pz</span></p>
+                </div>
+                <p class="title"><span style="color:black">Cerveza cremosa de maiz </span> </p>
+                <a href="" data-id="3" class="btn-add-cart">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="https://i.imgur.com/zo5ApSD.jpg"
+                    width ="150px"
+                    height ="150px" alt="">
+                    <p><span>$190x12pz</span></p>
+                </div>
+                <p class="title"><span style="color:black">Cerveza de trigo</span></p>
+                <a href="" data-id="4" class="btn-add-cart">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="https://i.imgur.com/0tW52tb.jpg"
+                    width ="150px"
+                    height ="150px" alt="">
+                    <p><span>$160x12pz</span></p>
+                </div>
+                <p class="title"><span style="color:black">Cerveza sin alcohol</span></p>
+                <a href="" data-id="5" class="btn-add-cart">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="https://i.imgur.com/xfHZwKF.jpg"
+                    width ="150px"
+                    height ="150px" alt="">
+                    <p><span>$190x12pz</span></p>
+                </div>
+                <p class="title"><span style="color:black">Cerveza reposada</span></p>
+                <a href="" data-id="6" class="btn-add-cart">AGREGAR AL CARRITO</a>
+            </div><br>
+
+<marquee BENAVIOR- ALTENARTE><font><span style="color:white" > TENEMOS ENVÍOS GRATIS A TODA LA REPUBLICA HASTA CON 30% DE DESCUENTO COMPRA YA🛒</span></font></marquee>
+
+            </section>
+            <footer>
+    <p>©️ 2023 craft beer| Derechos Reservados de Esbeidi regina trejo rocha </p>
+  </footer>
+  <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="pro.js" ></script>
+
+
+</main>
+</body>
+</html>
